@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>erf</title>
+    <link rel="stylesheet" href="../dist/output.css">
+    <link rel="stylesheet" href="../fontt/fontawesome/fontawesome-free-6.1.1-web/css/all.css"/>
+    <link rel="stylesheet" href="styles/animate.min.css"/>
+    <style>
+       
+
+      
+    </style>
+</head>
+
+<body class="font-vazir" dir="rtl">
+
+
+
+
+    <header style="background:linear-gradient(to right,rgba(58, 69, 75, 0.5),rgba(72, 71, 61, 0.5),rgba(0,0,0,0.5)),url('../image/01.jpg'),center;background-size: cover;"  class=" h-[20vh] lg:h-[30vh]  pt-4 w-full transition-all duration-500">
+
+
+
+
+    
+        <nav class=" flex justify-between  container mx-auto ">
+            
+    
+            <div class="flex items-center">
+    
+                <div class="pl-5">
+                    <img src="../image/header-logo-primary.png" class=" lg:w-[100px] lg:h-[100px]      w-[50px]  h-[50px]">
+                </div>
+                <!--    toggle-meno-sidbar   -->
+                <div id="open_Meno_mobile" class=" lg:hidden  cursor-pointer">
+                    <i class="fa-solid fa-bars  bg-slate-800 p-2 rounded-lg text-white  shadow-md shadow-gray-300"></i>
+                </div>
+    
+                <!--    toggle-meno-sidbar   -->
+    
+                <ul  class="hidden lg:flex gap-x-4 xl:gap-x-6 text-white">
+                    <li class="meno_nav"><a href="#">اخرین مدرس ها</a></li>
+                    <li class="meno_nav"><a href="#">معرفی مدرسین</a></li>
+                    <li class="meno_nav"><a href="#">بلاگ</a></li>
+                    <li class="meno_nav"><a href="#">همکاری با تاپلرن</a></li>
+                    <li class="meno_nav"><a href="#">قوانین سایت</a></li>
+                    <li class="meno_nav"><a href="#">مشاوره رفع اشکال</a></li>
+                    <li class="meno_nav"><a href="#">تماس با ما</a></li>
+                   
+                </ul>
+    
+            </div>
+    
+            <div class="flex items-center gap-x-5">
+    
+                <div class="flex items-center cursor-pointer select-none " id="one">
+                    <i class="fa-solid text-sm mt-2  fa-angle-right  p-2 pb-4 text-red-500  transition-all"></i><h1 class="font-bold text-[10px] lg:text-[15px] text-white">Erfan_body</h1>
+                </div>
+                <div>
+                    <img src="../image/teacher/55.jpg" class="rounded-full w-[30px] h-[30px] border-[3px]  border-gray-300 lg:w-[50px] lg:h-[50px]">
+                </div>
+    
+            </div>
+           
+         
+        </nav>
+        <div class=" absolute z-10 left-0">
+     
+            <ul class=" activ_index  transition-all duration-500   float-left bg-gray-50 ml-8 lg:ml-14 2xl:ml-36 py-4 md:py-6 px-3 pl-5 md:pl-8 space-y-2 lg:space-y-3 text-[10px] lg:text-sm text-gray-800 after:content-[''] relative after:w-6 after:absolute after:h-6 after:bg-gray-50 after:top-[-10px] after:rotate-45 rounded-md shadow-[0_0_9px_5px_gray] " id="m1">
+                <li class="meno_profile_index"><i class="fa-regular fa-user pl-4 text-red-400/70"></i><a href="#">مشاهده حساب کاربری</a></li>
+                <li class="meno_profile_index"><i class="fa-solid fa-user-gear pl-4 text-red-400/70"></i><a href="#">ویرایش حساب کاربری</a></li>
+                <li class="meno_profile_index"><i class="fa-solid fa-key pl-4 text-red-400/70"></i><a href="#">تغییر رمز عبور</a></li>
+                <li class="meno_profile_index"><i class="fa-solid fa-box-open pl-4 text-red-400/70"></i><a href="#">دوره های من</a></li>
+                <li class="meno_profile_index"><i class="fa-solid fa-clipboard-list pl-4 text-red-400/70"></i><a href="#">فاکتور های من</a></li>
+                <li class="meno_profile_index"><i class="fa-solid fa-clipboard-check pl-4 text-red-400/70"></i><a href="#">تیکت ها</a></li>
+                <li class="meno_profile_index"><i class="fa-solid fa-right-from-bracket pl-4 text-red-400/70"></i><a href="#">خروج حساب</a></li>
+            </ul>
+        </div>
+       
+              
+    
+                
+    
+                
+             
+    
+    </header>
+    
+    <!--start _______________________________ meno_mobile-->
+    <aside class="bg-gray-900 blur-0 flex  items-center flex-col h-screen fixed lg:hidden w-[60%] transition-all duration-500   top-0 overflow-y-scroll z-50">
+        <div id="clous_mobile_meno" class=" lg:hidden px-10 cursor-pointer flex justify-end w-full p-5">
+        <i class="fa-regular fa-circle-xmark  bg-slate-800 rounded-full text-gray-400 text-3xl  shadow-md shadow-gray-300"></i>
+        </div>
+        <div class="p-3">
+        <img src="../image/header-logo-primary.png" class=" w-28 h-24">
+        </div>
+        <h1 class="mt-10 border-b-2 text-white border-white p-2 w-[80%] pr-4 text-lg font-bold">آموزش های تاپلرن</h1>
+        
+        <ul class="mt-20 text-right w-[80%] text-white ">
+        
+        <li><a href="#"><i class="fa-solid fa-caret-left px-3"></i>برنامه نویسی وب</a><i class="fa-solid  cursor-pointer fa-plus float-left text-blue-500 bg-slate-50 p-1 rounded-md"></i>
+        
+        <ul class="bg-gray-800 rounded-lg space-y-2 text-sm pr-6  w-[90%] my-6 overflow-hidden h-0 items_s transition-all duration-300 ">
+        <li class=" hover:bg-gray-700 transition-all duration-300 rounded-lg py-2 mx-2"><a href="#"><i class="fa-solid  fa-circle px-2 text-[0.4rem]"></i>آموزش C#</a></li>
+        <li class="py-2 hover:bg-gray-700 transition-all duration-300 mx-2 rounded-lg"><a href="#"><i class="fa-solid fa-circle px-2 text-[0.4rem]"></i>یادگیری وب</a></li>
+        <li class="py-2 hover:bg-gray-700 transition-all duration-300 mx-2 rounded-lg"><a href="#"><i class="fa-solid fa-circle px-2 text-[0.4rem]"></i>آموزش HTML</a></li>
+        <li class="py-2 hover:bg-gray-700 transition-all duration-300 mx-2 rounded-lg"><a href="#"><i class="fa-solid fa-circle px-2 text-[0.4rem]"></i>آموزش CSS</a></li>
+        </ul>
+        
+        
+        </li>
+        
+        <li><a href="#"><i class="fa-solid fa-caret-left px-3"></i>آموزش سخت افزار</a><i class="fa-solid  cursor-pointer fa-plus float-left text-blue-500 bg-slate-50 p-1 rounded-md"></i>
+        <ul class="bg-gray-800 rounded-lg space-y-2 text-sm pr-6  w-[90%] my-6 overflow-hidden h-0 transition-all duration-300   items_s">
+        <li class="py-2 hover:bg-gray-700 transition-all duration-300 mx-2 rounded-lg "><a href="#"><i class="fa-solid fa-circle px-2 text-[0.4rem]"></i>آموزش C#</a></li>
+        <li class="py-2 hover:bg-gray-700 transition-all duration-300 mx-2 rounded-lg "><a href="#"><i class="fa-solid fa-circle px-2 text-[0.4rem]"></i>یادگیری وب</a></li>
+        <li class="py-2 hover:bg-gray-700 transition-all duration-300 mx-2 rounded-lg "><a href="#"><i class="fa-solid fa-circle px-2 text-[0.4rem]"></i>آموزش HTML</a></li>
+        <li class="py-2 hover:bg-gray-700 transition-all duration-300 mx-2 rounded-lg "><a href="#"><i class="fa-solid fa-circle px-2 text-[0.4rem]"></i>آموزش CSS</a></li>
+        </ul>
+        
+        </li>
+        <li><a href="#"><i class="fa-solid fa-caret-left px-3"></i>آموزش C#</a><i class="fa-solid fa-plus cursor-pointer  float-left text-blue-500 bg-slate-50 p-1 rounded-md"></i>
+        <ul class="bg-gray-800 rounded-lg space-y-2 text-sm pr-6  w-[90%] my-6 h-0  overflow-hidden  items_s transition-all duration-300 ">
+        <li class="py-2 hover:bg-gray-700 transition-all duration-300 mx-2 rounded-lg "><a href="#"><i class="fa-solid fa-circle px-2 text-[0.4rem]"></i>آموزش C#</a></li>
+        <li class="py-2 hover:bg-gray-700 transition-all duration-300 mx-2 rounded-lg "><a href="#"><i class="fa-solid fa-circle px-2 text-[0.4rem]"></i>یادگیری وب</a></li>
+        <li class="py-2 hover:bg-gray-700 transition-all duration-300 mx-2 rounded-lg "><a href="#"><i class="fa-solid fa-circle px-2 text-[0.4rem]"></i>آموزش HTML</a></li>
+        <li class="py-2 hover:bg-gray-700 transition-all duration-300 mx-2 rounded-lg "><a href="#"><i class="fa-solid fa-circle px-2 text-[0.4rem]"></i>آموزش CSS</a></li>
+        </ul>
+        
+        </li>
+        <li><a href="#"><i class="fa-solid fa-caret-left px-3"></i>برنامه نویسی تحت ویندوز</a>
+        
+        </li>
+        
+        
+        
+        </ul>
+        <br>
+        <h1 class="mt-10  border-b-2 border-white text-white p-2 w-[80%] pr-4 text-lg font-bold">منوی دسترسی</h1>
+        
+        
+        
+        <ul class="mt-8  text-right w-[80%] space-y-4 text-sm font-bold text-blue-400 ">
+        
+        <li><a href="#"><i class="fa-solid px-2 fa-angle-left text-white"></i>اخرین دوره ها</a></li>
+        <li><a href="#"><i class="fa-solid px-2 fa-angle-left text-white"></i>معرفین مدرسین</a></li>
+        <li><a href="#"><i class="fa-solid px-2 fa-angle-left text-white"></i>مقالات</a></li>
+        <li><a href="#"><i class="fa-solid px-2 fa-angle-left text-white"></i>قوانین</a> </li>
+        <li><a href="#"><i class="fa-solid px-2 fa-angle-left text-white"></i>درباره ما</a> </li>
+        <li><a href="#"><i class="fa-solid px-2 fa-angle-left text-white"></i>تماس با ما</a> </li>
+        
+        </ul>
+        <br>
+        
+        </aside>
+        <!--end _______________________________ meno_mobile-->
+
+
+ <!--start _______________________________ categouris-->
+ <div class=" hidden lg:block" >
+    <div class="bg-gray-600 m-5 mx-18 rounded-lg  flex justify-between items-center py-6 pr-8">
+        <div class=" relative">
+            <ul class="flex gap-x-6">
+                <li class="text-white group"><a href="#">برنامه نویسی وب <i class="fa-solid  fa-angle-down px-1 text-lg group-hover:rotate-180  text-red-400  transition-all pr-2"></i></a>
+                
+                
+                    <ul class="bg-gray-600 shadow-[0_0_10px_gray] invisible group-hover:visible delay-300 transition-all w-52   rounded-xl absolute z-50 right-[5%] top-10 py-4 pl-8 pr-4 space-y-4">
+                        <li class=" transition  hover:bg-gray-700  p-2 rounded-xl"><a href="#">آموزش زبان PHP</a></li>
+                        <li class=" transition  hover:bg-gray-700  p-2 rounded-xl"><a href="#"> آموزشc# </a></li>
+                        <li class=" transition  hover:bg-gray-700  p-2 rounded-xl"><a href="#">آموزش وردپرس</a></li>
+                        <li class=" transition  hover:bg-gray-700  p-2 rounded-xl"><a href="#">Asp.net</a></li>
+                    </ul>
+                
+                
+                </li>
+                <li class="text-white group"><a href="#">سیستم عامل</a> <i class="fa-solid  fa-angle-down px-1 text-lg group-hover:rotate-180  text-red-400  transition-all"></i>
+                
+                
+                    <ul class="bg-gray-600 shadow-[0_0_10px_gray] invisible group-hover:visible delay-300 transition-all w-52   rounded-xl absolute right-1/3 z-50 top-10 py-4 pl-8 pr-4 space-y-4">
+                        <li class=" transition hover:bg-gray-700 p-2 rounded-xl"><a href="#">آموزش زبان PHP</a></li>
+                        <li class=" transition hover:bg-gray-700 p-2 rounded-xl"><a href="#"> آموزشc# </a></li>                               
+                    </ul>
+                
+                
+                </li>
+                <li class="text-white group"><a href="#"> برنامه نویسی موبایل <i class="fa-solid  fa-angle-down px-1 text-lg group-hover:rotate-180  text-red-400  transition-all pr-2"></i></a>
+                
+                    <ul class="bg-gray-600 shadow-[0_0_10px_gray]  invisible group-hover:visible delay-300 transition-all w-52   rounded-xl absolute right-[55%] z-50 top-10 py-4 pl-8 pr-4 space-y-4">
+                        <li class=" transition hover:bg-gray-700 p-2 rounded-xl"><a href="#">آموزش زبان PHP</a></li>
+                        <li class=" transition hover:bg-gray-700 p-2 rounded-xl"><a href="#"> آموزشc# </a></li>                               
+                    </ul>
+                
+                </li>
+                <li class="text-white group"><a href="#">تحت ویندوز<i class="fa-solid  fa-angle-down px-1 text-lg group-hover:rotate-180  text-red-400  transition-all pr-2"></i></a>
+                
+                    <ul class="bg-gray-600 shadow-[0_0_10px_gray] invisible group-hover:visible delay-300 transition-all w-52  rounded-xl absolute right-[75%] z-50 top-10 py-4 pl-4 pr-4 space-y-4">
+                        <li class=" transition hover:bg-gray-700 p-2 rounded-xl"><a href="#">آموزش زبان PHP</a></li>
+                        <li class=" transition hover:bg-gray-700 p-2 rounded-xl"><a href="#"> آموزشc# </a></li>                               
+                    </ul>
+                
+                </li>
+            </ul>
+        </div>
+    </div>
+  
+
+</div>
+<!--end _______________________________ categouris-->
+
+
+ 
+
+
+ 
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+<!--start _______________________________ content-->
+
+<main class="my-20 md:mx-8">
+
+
+   <div class=" bg-gray-200 p-3 md:p-10 rounded-2xl">
+    <section class="grid grid-cols-12  rounded-3xl overflow-hidden bg-white">
+
+
+
+        <div class="col-span-12 md:col-span-6 mx-auto  my-5 p-5">
+    
+            <h1 class=" text-xl md:text-2xl mb-3 border-b-2 border-b-gray-300 flex items-center  text-gray-700 py-3" ><i class="fa-solid fa-address-card px-2 text-gray-300  text-5xl"></i>فرم ثبت نام در <span class=" text-xl md:text-3xl font-bold text-blue-500">تاپلرن</span></h1>
+    
+            <form class=" space-y-5">
+                <div>
+                    <label class="">نام:</label>
+                    <input type="text" placeholder="نام خود را فارسی وارد کنید" class="w-full py-3 px-2 rounded-lg outline-none mt-2 bg-gray-200 border border-gray-300">
+                </div>
+                <div>
+                    <label class="">پست الکترونیکی:</label>
+                    <input type="text" placeholder="ایمیل را وارد کنید" class="w-full py-3 px-2 rounded-lg outline-none mt-2 bg-gray-200 border border-gray-300">
+                </div>
+                <div>
+                    <label class="">رمز ورود:</label>
+                    <input type="text" placeholder="پسوورد خود را وارد کنید" class="w-full py-3 px-2 rounded-lg outline-none mt-2 bg-gray-200 border border-gray-300">
+                </div>
+                <div>
+                    <label class="">تکرار رمز عبور:</label>
+                    <input type="text" placeholder="پسوورد را مجدد وارد کنید" class="w-full py-3 px-2 rounded-lg outline-none mt-2 bg-gray-200 border border-gray-300">
+                </div>
+                <div class="border-b-2 border-b-gray-300 pb-5">
+                    <label class="">عکس پروفایل(اختیاری)</label>
+                    <input type="file"  placeholder="نام خود را فارسی وارد کنید" class="w-[50%] py-3 mr-5 px-2 rounded-lg outline-none mt-2 bg-gray-200 border border-gray-300 file:rounded-lg file:py-1 file:px-3 file:bg-blue-300 file:border-0 ">
+                </div>
+    
+    
+                <p> آیا ثبت نام کرده اید؟ <span class=" underline decoration-2 underline-offset-8 decoration-teal-500">وارد شوید</span></p>
+                    <button class="py-4 px-8 bg-cyan-500 text-white rounded-xl w-full text-xl">ثبت نام</button>
+            </form>
+    
+        </div>
+    
+        <div class=" hidden md:block md:col-span-6">
+            <img src="../image/log.jpg" class="w-full">
+        </div>
+    
+    
+    
+    
+    
+    </section>
+   </div>
+
+
+
+
+
+</main>
+<!--end _______________________________ content-->
+
+
+
+
+
+
+
+
+
+<footer class="bg-red-500 px-8 py-4 shadow-[0_0_10px_blue]" style="background: url('../image/subtle-prism.svg');">
+  
+
+
+    <section class=" grid grid-cols-12">
+
+
+        <div class=" col-span-5">
+
+            <form class=" space-y-8 mt-16">
+                <div>
+                    <label class="font-bold text-white">ایمیل شما:  <i class="text-red-500 px-2 text-lg fa-solid fa-envelope-open-text"></i></label>
+                    <input  class=" bg-gray-200 shadow-md shadow-gray-300  w-full py-2 px-2 rounded-lg transition-all duration-300 ring-blue-500 focus:ring-4 outline-none  my-3" type="text" placeholder="ایمیل شما">
+                </div>
+              <div>
+                <label class="font-bold text-white">شماره موبایل:<i class="text-red-500 px-2 text-lg fa-solid fa-mobile-retro"></i></label>
+                <input  class=" bg-gray-200 shadow-md shadow-gray-300  w-full py-2 px-2 rounded-lg transition-all duration-300 ring-blue-500 focus:ring-4 outline-none  mt-3" type="text" placeholder="شماره تلفن">
+              </div>
+              <div>  
+                <button type="button" class="py-2 px-5 focus:ring-4 transition-all duration-300 ring-green-300 text-white  bg-green-500 rounded-md" >عصویت در خبرنامه</button>
+              </div>
+                
+            </form>
+            <h1 class="font-bold text-lg text-white my-4  ">درباره ی تاپلرن</h1>
+                <p class=" text-justify text-gray-300 border border-red-100 p-2 rounded-md">تاپلرن یکی از پرتلاش‌ترین و بروزترین وبسایت های آموزشی در سطح ایران است که همیشه تلاش کرده تا بتواند جدیدترین و بروزترین مقالات و دوره‌های آموزشی را در اختیار علاقه‌مندان ایرانی قرار دهد. تبدیل کردن برنامه نویسان ایرانی به بهترین برنامه نویسان جهان هدف ماست.</p>
+        </div>
+
+
+        <div class=" col-span-7">
+            <div class=" flex justify-end mt-20 ">
+                <img src="../image/logo.png" class="bg-blue-200 p-1 w-[40%] lg:w-auto lg:p-2 rounded-lg mx-2 lg:mx-5">
+                <img src="../image/logo (1).png" class="bg-blue-200 p-1 w-[40%] lg:w-auto lg:p-5 rounded-lg  lg:mx-5">
+            </div>
+            <div class=" flex justify-end mt-20 ">
+                <i class="fa-brands fa-instagram p-2 lg:p-5 mx-2 rounded-xl text-pink-500 bg-slate-300 text-5xl lg:text-7xl font-bold"></i>
+                <i class="fa-brands fa-telegram p-2 lg:p-5 mx-2 rounded-xl text-blue-500 bg-slate-300         text-5xl lg:text-7xl font-bold"></i>
+            </div>
+           
+        </div>
+
+
+
+    </section>
+    
+   <hr class="mt-6">
+    <p class="text-center py-5 font-bold text-lg text-white">تمامی حقوق مادی و معنوی این سایت متعلق به تاپ لرن می باشد و هرگونه کپی برداری غیرقانونی محسوب خواهد شد</p>
+
+</footer>
+
+
+
+    <script src="js/mainejs.js"></script> 
+
+
+    
+</body>
+</html>
+
+
+
+
+
+
+
+

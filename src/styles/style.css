@@ -1,0 +1,174 @@
+
+
+@font-face {
+    font-family:vazir;
+    src: url("../fontt/vazir/Farsi-Digits/Vazi-Regular-FD.woff") format('woff');
+}
+
+
+
+@tailwind base;
+@tailwind components;
+
+@layer components {
+  .meno_nav{
+    @apply text-xs xl:text-base relative py-2 lg:px-2 cursor-pointer
+  }
+  .meno_profile_index{
+    @apply hover:text-orange-600 transition-all
+  }
+  .pic_header{
+    @apply text-center font-bold text-white
+  }
+
+  .categories_sub{
+    @apply bg-gray-600 shadow-[0_0_10px_gray] invisible group-hover:visible delay-300 transition-all  rounded-xl absolute z-50  top-10 py-4 pl-8 pr-4 space-y-4
+  }
+  .categories_sub_hover{
+    @apply transition hover:bg-gray-700 p-2 rounded-xl
+  }
+
+}
+@tailwind utilities;
+
+nav ul li{
+  transition: all 0.75s;
+}
+  nav ul li::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 5px;
+    width: 100%;
+    border-radius: 5px;
+    height: 100%;
+    background-color: rgba(0, 255, 255, 0.3);
+    transition: all 0.5s;
+  }
+  nav ul li:hover::after{
+    position: absolute;
+    left: 0;
+    top: -40px;
+    border-radius: 5px;
+    background-color: rgba(0, 104, 250, 0.563);
+  }
+ 
+
+
+
+  
+.active_sidbar{
+  padding: 1rem 0;
+  height: auto!important;
+}
+aside::-webkit-scrollbar{
+  width: 7px;
+  background-color: #0d120f;
+}
+aside::-webkit-scrollbar-thumb{
+  width: 5px;
+  border-radius: 5px;
+  background-color: rgb(0, 132, 255);
+}
+
+  aside{
+    right: -70%;
+  
+  }
+ 
+
+
+
+  
+  svg {
+    fill: rgba(0, 0, 0, 0.192);
+    height: 2.5rem;
+    width: 2.5rem;
+    margin: 0.2rem;
+  }
+  
+
+  
+  #radios label {
+    position: relative;
+  }
+  
+  input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+  }
+  
+  input[type="radio"] + svg {
+    -webkit-transition: all 0.2s;
+    transition: all 0.3s;
+  }
+  
+  input + svg {
+    cursor: pointer;
+  }
+  
+  input[class="super-happy"]:hover + svg,
+  input[class="super-happy"]:checked + svg,
+  input[class="super-happy"]:focus + svg {
+    fill: rgb(0, 109, 217);
+  }
+  
+  input[class="happy"]:hover + svg,
+  input[class="happy"]:checked + svg,
+  input[class="happy"]:focus + svg {
+    fill: rgb(0, 204, 79);
+  }
+  
+  input[class="neutral"]:hover + svg,
+  input[class="neutral"]:checked + svg,
+  input[class="neutral"]:focus + svg {
+    fill: rgb(232, 214, 0);
+  }
+  
+  input[class="sad"]:hover + svg,
+  input[class="sad"]:checked + svg,
+  input[class="sad"]:focus + svg {
+    fill: rgb(229, 132, 0);
+  }
+  
+  input[class="super-sad"]:hover + svg,
+  input[class="super-sad"]:checked + svg,
+  input[class="super-sad"]:focus + svg {
+    fill: rgb(239, 42, 16);
+  }
+
+
+  .activ_index{
+  visibility: hidden;
+    opacity: 0;
+    margin-top: 50px;
+  }
+
+  .slider .item{
+    display: none;
+  }
+
+  .active_slider_item{
+    display: block!important;
+  }
+
+  .rotate_btn{
+   
+    transform: rotate(-90deg);
+    transition: all 0.4s;
+    
+  
+  }
+
+  #acar_datel::-webkit-scrollbar{
+    
+    width: 8px;
+    background-color: #7b7b7b;
+    border-radius: 5px;
+    }
+
+  #acar_datel::-webkit-scrollbar-thumb{
+    width: 6px;
+    border-radius: 5px;
+    background-color: rgb(47, 47, 47);
+  }
